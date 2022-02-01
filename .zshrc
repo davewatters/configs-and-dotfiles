@@ -9,12 +9,12 @@ PS1='%B%F{green}%~%#%f%b '
 #
 alias ll='ls -lahG'
 alias cls='clear'
+alias cd..='cd ..'
 alias p3='ping -c3'
 alias py=python3
 alias vs=code
 alias bak2usb=~/dev/scripts/bak2usb.sh
 alias activate='source .venv/bin/activate'
-alias pwnytrap=~/dev/scripts/pwnytrap.sh
 
 # Customise the PATH
 #
