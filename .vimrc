@@ -23,3 +23,13 @@ set laststatus=2
 set statusline=
 set statusline+=\[\ %(%l\/%L,%c%V%)\ \] " [ line/tot_lines,col_no ]
 set statusline+=%F                      " full file path
+
+
+" Configure tabs as spaces
+set vartabstop=   " clear 
+set tabstop=4     " size of hard tabstop (\t)
+set softtabstop=2 " the number of columns for a tab
+set expandtab     " use spaces instead of tab chars
+set shiftwidth=2  " size of indent
+set autoindent    " copy indent from current line to next
+set smarttab	  " insert spaces to next indent
