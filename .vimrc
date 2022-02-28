@@ -6,10 +6,13 @@
 " Windows:      $HOME\_vimrc [ C:\Users\<username>\_vimrc ]
 "
 
+" Make backspace key behave
+set backspace=indent,eol,start
+
 " Show line numbers on the left
 " cmd to toggle on/off  :set nu!
 set number
-
+  
 " Syntax highlighting
 syntax on
 
@@ -21,8 +24,8 @@ set ruler
 " set statusline+=\[\ %(%l\/%L,%c%V%)\ %P\] " [ line/tot_lines,col_no pos]
 set laststatus=2
 set statusline=
-set statusline+=\[\ %(%l\/%L,%c%V%)\ \] " [ line/tot_lines,col_no ]
-set statusline+=%F                      " full file path
+set statusline+=\[Ln\ %(%l\/%L,Col\ %c%V%)\] " [ line/tot_lines,col_no ]
+set statusline+=%F                           " full file path
 
 
 " Configure tabs as spaces
