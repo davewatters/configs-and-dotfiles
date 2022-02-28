@@ -27,22 +27,22 @@ show_help () {
 # first check if any or too many args passed in
 if [ $# -eq 0 ] || [ $# -gt 2 ]; then
   show_help;
-  exit 1;
+  return 1;
 fi
 # check args
 dev_dir=$1
 init_python_venv=0
 if [ $# -gt 0 ]; then
   case $1 in
-    -h|--help) show_help; exit 0;;
+    -h|--help) show_help; return 0;;
     -p) init_python_venv=1;
         dev_dir=$2;;
-    -*) echo "Invalid option: $1. Use -h or --help for help"; exit 1;;
+    -*) echo "Invalid option: $1. Use -h or --help for help"; return 1;;
   esac  
 fi
 if [ -d $dev_dir ]; then
   echo "Can't create: "$dev_dir". Directory already exists.";
-  exit 1;
+  return 1;
 fi
 
 echo "Ceating new project directory: "$dev_dir
