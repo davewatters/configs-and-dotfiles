@@ -1,3 +1,6 @@
+# Data files
+*.sqlite3
+
 # Dev environment
 .DS_Store
 .github/
