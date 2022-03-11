@@ -5,8 +5,8 @@
 # Make sure to source this script to change into the new dir
 #  e.g. $source ./mkdev.sh <new_dir> or $. ./mkdev.sh <new_dir>
 #
-FILE_VERSION="v1.0.2"
-DOTFILE_SOURCE_DIR="$HOME/dev/configs/"
+FILE_VERSION="v1.0.3"
+DOTFILE_SOURCE_DIR="$HOME/dev/dotfiles/"
 
 show_help () {
   echo "makdev.sh $FILE_VERSION"
@@ -20,7 +20,6 @@ show_help () {
   echo "  Options:"
   echo "    -h, --help  :  Show this Help info"
   echo "    -p          :  Initialise dir as Python virtual env"
-  echo
   echo
 }
 
@@ -58,7 +57,7 @@ mkdir $dev_dir
 cd $dev_dir
 echo "Creating README file"
 touch README.md
-echo "# README file foir $dev_dir Project Directory" > README.md
+echo "# README file for $dev_dir Project Directory" > README.md
 echo "Creating .gitignore file"
 cp $DOTFILE_SOURCE_DIR.gitignore .
 # I like to use a scratch dir during development
