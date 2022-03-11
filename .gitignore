@@ -28,5 +28,9 @@ __pycache__/
 .venv/
 venv/
 
+# Testing
+.coverage
+htmlcov
+
 # VS Code
 .vscode/settings.json
