@@ -15,6 +15,7 @@ set number
   
 " Syntax highlighting
 syntax on
+filetype on
 
 " Defualt ruler: line,col & rel pos in file
 " approx default rulerformat=%l,%c%V%=%P
