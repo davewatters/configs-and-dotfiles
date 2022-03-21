@@ -1,12 +1,19 @@
- #
- # Source from ~/.zshrc or ./bashrc
- #
- alias ll='ls -lahG'
- alias cls='clear'
- alias cd..='cd ..'
- alias p3='ping -c3'
- alias py=python3
- alias vs=code
- alias bak2usb=~/dev/scripts/bak2usb.sh
- alias activate='source .venv/bin/activate'
- 
+#
+# Source from ~/.zshrc or ~/.bashrc
+#
+
+# useful an any system 
+alias ll='ls -lahG'
+alias cls='clear'
+alias cd..='cd ..'
+alias p3='ping -c3'
+
+# for dev environment
+alias py=python3
+alias vs=code
+alias activate='source .venv/bin/activate'
+alias gbra='git branch -a'
+
+# wrappers for my custom scripts
+alias bak2usb=~/dev/scripts/bak2usb.sh
+alias pwnytrap='pwnytrap.sh $1 $2'
