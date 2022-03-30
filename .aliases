@@ -12,8 +12,15 @@ alias p3='ping -c3'
 alias py=python3
 alias vs=code
 alias activate='source .venv/bin/activate'
-alias gbra='git branch -a'
+# Git
+alias bras='git branch -a -vv'
+alias checkout='git checkout $1'
+# Heroku
+alias herokpe='heroku run printenv -a $1'
+alias herokpg='heroku pg:psql -a $1'
+alias herokrs='heroku ps:restart -a $1'
+alias heroksh='heroku run bash -a $1'
 
 # wrappers for my custom scripts
 alias bak2usb=~/dev/scripts/bak2usb.sh
-alias pwnytrap='pwnytrap.sh $1 $2'
+alias hibp='pwnytrap.sh $1 $2'

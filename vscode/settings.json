@@ -1,0 +1,28 @@
+{
+    "telemetry.enableCrashReporter": false,
+    "telemetry.enableTelemetry": false,
+    "liveServer.settings.donotShowInfoMsg": true,
+    "liveServer.settings.donotVerifyTags": true,
+    "python.linting.pylintEnabled": true,
+    "python.linting.enabled": true,
+    "terminal.integrated.shell.osx": "/bin/zsh",
+    "python.pythonPath": "/usr/local/bin/python3",
+    "python.showStartPage": false,
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter.notebook.ipynb"
+    },
+    "workbench.iconTheme": "vscode-icons",
+    "editor.tabSize": 2,
+    "liveServer.settings.CustomBrowser": "chrome:PrivateMode",
+    "editor.minimap.showSlider": "always",
+    "workbench.activityBar.visible": false,
+    "[python]": {
+        "editor.wordBasedSuggestions": false,
+        "editor.tabSize": 4
+    },
+    "workbench.startupEditor": "none",
+    "editor.minimap.enabled": false,
+    "emmet.includeLanguages": {
+        "django-html": "html"
+    }
+}
