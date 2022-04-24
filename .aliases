@@ -12,9 +12,14 @@ alias p3='ping -c3'
 alias py=python3
 alias vs=code
 alias activate='source .venv/bin/activate'
+
 # Git
 alias bras='git branch -a -vv'
 alias checkout='git checkout $1'
+alias commit='git commit -m $1'
+alias pull='git pull $1 $2'
+alias push='git push $1 $2'
+
 # Heroku
 alias herokpe='heroku run printenv -a $1'
 alias herokpg='heroku pg:psql -a $1'
