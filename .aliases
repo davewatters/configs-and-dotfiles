@@ -10,7 +10,7 @@ alias p3='ping -c3'
 
 # for dev environment
 alias py=python3
-alias vs=code
+alias vs='code -n $1'
 alias activate='source .venv/bin/activate'
 
 # Git
