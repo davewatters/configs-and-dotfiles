@@ -2,17 +2,17 @@
 #
 # Prep a dev project folder with defaults.
 #
-# Make sure to source this script to change into the new dir
-#  e.g. $source ./mkdev.sh <new_dir> or $. ./mkdev.sh <new_dir>
+# Make sure to source this script to change into the new directory
+#  e.g. $source ./mkdev.sh <new_dir>  or  $. ./mkdev.sh <new_dir>
 #
-FILE_VERSION="v1.0.3"
+FILE_VERSION="v1.0.4"
 DOTFILE_SOURCE_DIR="$HOME/dev/dotfiles/"
 
 show_help () {
   echo "makdev.sh $FILE_VERSION"
   echo "Make directory_name in current folder." 
-  echo "Create as dev project structure with .gitignore,"
-  echo "readme etc., Ititialises as a Git repo."
+  echo "Create as dev project structure with .gitignore, readme etc."
+  echo "Ititialises as a Git repo."
   echo "Optionally activate a Python virtual environment."
   echo "Source this script to change into the new directory when done."
   echo
@@ -30,7 +30,7 @@ if [ "$0" = "$BASH_SOURCE" ]; then
   exit 1;
 fi
 
-# check if any or too many args passed in
+# check if any, or too many, args passed in
 if [ $# -eq 0 ] || [ $# -gt 2 ]; then
   show_help;
   return 1;
@@ -60,7 +60,7 @@ touch README.md
 echo "# README file for $dev_dir Project Directory" > README.md
 echo "Creating .gitignore file"
 cp $DOTFILE_SOURCE_DIR.gitignore .
-# I like to use a scratch dir during development
+# I like to use a 'scratch' temp  directory during development
 mkdir scratch
 if [ $init_python_venv -eq 1 ]; then
   echo "Creating Python virtual environment"
@@ -68,7 +68,8 @@ if [ $init_python_venv -eq 1 ]; then
   echo "Activating Python virtual environment"
   source .venv/bin/activate
 fi
-echo "Initialise Git repo"
+echo "Initialising Git repo"
 git init
 git add .
 echo "Ready."
+
