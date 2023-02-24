@@ -1,4 +1,3 @@
-#
 # Set the shell prompt to current working dir
 # ond make it stand out with colour. Keep it simple. 
 #
@@ -24,12 +23,8 @@ fi
 
 # Customise the PATH
 #
-# Added for Homebrew's "sbin": you have installed formuale
-# that put executables in /user/local/sbin 
-PATH="/usr/local/sbin:${PATH}"
-# Added to use the Homebrew install of Python 3
-# For OSX 10.13 (High Sierra) or newer use the following path
-PATH="/usr/local/opt/python/libexec/bin:${PATH}"
+# Homebrew caveat -  unversioned symlinks for python, pip etc
+PATH=/usr/local/opt/python@3.11/libexec/bin:${PATH}
 # Prepend ~/bin to PATH for custom user scripts
 PATH=~/bin:${PATH}
 export PATH
