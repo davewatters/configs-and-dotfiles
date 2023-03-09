@@ -23,8 +23,11 @@ fi
 
 # Customise the PATH
 #
+# Add Visual Studio Code (run code from cmd line)
+PATH=${PATH}:"/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 # Homebrew caveat -  unversioned symlinks for python, pip etc
 PATH=/usr/local/opt/python@3.11/libexec/bin:${PATH}
 # Prepend ~/bin to PATH for custom user scripts
 PATH=~/bin:${PATH}
 export PATH
+
